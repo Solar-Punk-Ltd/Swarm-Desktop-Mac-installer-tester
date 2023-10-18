@@ -1,0 +1,6 @@
+2023/10/03 13:43:04 Swarm.Desktop-0.30.0-arm64.dmg
+cmd_test.txt
+go.mod
+main.go
+test1.txt
+
