@@ -16,7 +16,7 @@ func myInterval(steps int, interval int) {
 
 	resultCounter := result{0, 0}
 
-	fmt.Println("result counter:", resultCounter.success, resultCounter.failure)
+	//fmt.Println("result counter:", resultCounter.success, resultCounter.failure)
 
 	for i := 0; i < steps; i++ {
 		fmt.Printf("\n\n\n")

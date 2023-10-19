@@ -72,9 +72,11 @@ func mount_and_install(resultMap *map[string]bool) {
 
 				fmt.Println("--------------------------")
 				time.Sleep(3 * time.Second)
-				exitprog("Swarm Desktop")
+				exitSwarm := exec.Command("pkill", "swarm-desktop")
+				shellCommandHandler(exitSwarm, "EXIT SWARM DESKTOP.APP")
 				fmt.Println("--------------------------")
-				exitprog("Safari")
+				exitSafari := exec.Command("pkill", "Safari")
+				shellCommandHandler(exitSafari, "EXIT SAFARI")
 				fmt.Println("--------------------------")
 			}
 

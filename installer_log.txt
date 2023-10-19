@@ -3881,3 +3881,1035 @@ verified CRC32 $835C0D93
 
 2023/10/17 11:09:05 stdout DELETE SWARM DESKTOP DMG: 
 2023/10/17 11:09:05 stderr DELETE SWARM DESKTOP DMG: 
+2023/10/19 10:24:50 
+
+
+
+
+TEST ROUND No.1 at 2023-10-19 10:24:50.346327 +0200 CEST m=+5.124810001
+
+2023/10/19 10:25:04 stderr DOWNLOAD SWARM DESKTOP: --2023-10-19 10:24:50--  https://github.com/ethersphere/swarm-desktop/releases/download/v0.30.0/Swarm.Desktop-0.30.0-arm64.dmg
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T082450Z&X-Amz-Expires=300&X-Amz-Signature=6b3a161fd606be51c3d38255953514962dddf247a1bcff596fd6d9373ceb5ce7&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream [following]
+--2023-10-19 10:24:50--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T082450Z&X-Amz-Expires=300&X-Amz-Signature=6b3a161fd606be51c3d38255953514962dddf247a1bcff596fd6d9373ceb5ce7&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 99521748 (95M) [application/octet-stream]
+Saving to: âSwarm.Desktop-0.30.0-arm64.dmgâ
+
+     0K .......... .......... .......... .......... ..........  0% 3.47M 27s
+    50K .......... .......... .......... .......... ..........  ...... 99% 10.4M 0s
+ 96950K .......... .......... .......... .......... .......... 99% 5.74M 0s
+ 97000K .......... .......... .......... .......... .......... 99% 4.86M 0s
+ 97050K .......... .......... .......... .......... .......... 99% 12.3M 0s
+ 97100K .......... .......... .......... .......... .......... 99% 10.5M 0s
+ 97150K .......... .......... .......... .........            100% 8.83M=13s
+
+2023-10-19 10:25:04 (7.07 MB/s) - âSwarm.Desktop-0.30.0-arm64.dmgâ saved [99521748/99521748]
+
+
+2023/10/19 10:25:10 stdout MOUNT SWARM DESKTOP.DMG: Checksumming Protective Master Boot Record (MBR : 0)…
+Protective Master Boot Record (MBR :: verified CRC32 $F5E8FC93
+Checksumming GPT Header (Primary GPT Header : 1)…
+ GPT Header (Primary GPT Header : 1): verified CRC32 $8B031ED6
+Checksumming GPT Partition Data (Primary GPT Table : 2)…
+GPT Partition Data (Primary GPT Tabl: verified CRC32 $9228D4C7
+Checksumming  (Apple_Free : 3)…
+                    (Apple_Free : 3): verified CRC32 $00000000
+Checksumming disk image (Apple_HFS : 4)…
+          disk image (Apple_HFS : 4): verified CRC32 $9637F3A7
+Checksumming  (Apple_Free : 5)…
+                    (Apple_Free : 5): verified CRC32 $00000000
+Checksumming GPT Partition Data (Backup GPT Table : 6)…
+GPT Partition Data (Backup GPT Table: verified CRC32 $9228D4C7
+Checksumming GPT Header (Backup GPT Header : 7)…
+  GPT Header (Backup GPT Header : 7): verified CRC32 $53B79C5A
+verified CRC32 $835C0D93
+/dev/disk4          	GUID_partition_scheme          	
+/dev/disk4s1        	Apple_HFS                      	/Volumes/Swarm Desktop
+
+2023/10/19 10:25:10 stderr MOUNT SWARM DESKTOP.DMG: 
+2023/10/19 10:25:13 stdout INSTALL SWARM DESKTOP.APP: 
+2023/10/19 10:25:13 stderr INSTALL SWARM DESKTOP.APP: 
+2023/10/19 10:25:13 Installation success 
+2023/10/19 10:25:16 stdout OPEN SWARM DESKTOP.APP: 
+2023/10/19 10:25:16 stderr OPEN SWARM DESKTOP.APP: 
+2023/10/19 10:25:46 stdout CHECK DATA-DIR EXISTENCE: 
+2023/10/19 10:25:46 stderr CHECK DATA-DIR EXISTENCE: 
+2023/10/19 10:25:49 Found bee.log: "msg"="using chain with network network" "chain_id"=100 "network_id"=1
+2023/10/19 10:25:49 Found bee.log: "msg"="starting debug server" "address"="127.0.0.1:1635"
+2023/10/19 10:25:49 Found bee.log: "msg"="using datadir" "path"="/Users/zolmac/Library/Application Support/Swarm Desktop/data-dir"
+2023/10/19 10:25:49 Found bee.log: "msg"="starting in ultra-light mode"
+2023/10/19 10:25:49 Found bee.log: "msg"="connected" "tld"="" "endpoint"="https://cloudflare-eth.com"
+2023/10/19 10:25:49 Found bee.log: "msg"="starting api server" "address"="127.0.0.1:1633"
+2023/10/19 10:25:52 stdout EXIT SWARM DESKTOP.APP: 
+2023/10/19 10:25:52 stderr EXIT SWARM DESKTOP.APP: 
+2023/10/19 10:25:52 stdout EXIT SAFARI: 
+2023/10/19 10:25:52 stderr EXIT SAFARI: 
+2023/10/19 10:25:55 stdout Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 10:25:55 stderr Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 10:25:55 stdout Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 10:25:55 stderr Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 10:25:55 stdout Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: 
+2023/10/19 10:25:55 stderr Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: 
+2023/10/19 10:25:55 stdout UNMOUNT SWARM DESKTOP.DMG: "disk4" ejected.
+
+2023/10/19 10:25:55 stderr UNMOUNT SWARM DESKTOP.DMG: 
+2023/10/19 10:25:55 Detach success: "disk4" ejected.
+
+2023/10/19 10:25:57 stdout DELETE SWARM DESKTOP DMG: 
+2023/10/19 10:25:57 stderr DELETE SWARM DESKTOP DMG: 
+2023/10/19 10:26:01 
+
+
+
+
+TEST ROUND No.2 at 2023-10-19 10:26:01.868826 +0200 CEST m=+76.647377126
+
+2023/10/19 10:26:17 stderr DOWNLOAD SWARM DESKTOP: --2023-10-19 10:26:01--  https://github.com/ethersphere/swarm-desktop/releases/download/v0.30.0/Swarm.Desktop-0.30.0-arm64.dmg
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T082450Z&X-Amz-Expires=300&X-Amz-Signature=6b3a161fd606be51c3d38255953514962dddf247a1bcff596fd6d9373ceb5ce7&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream [following]
+--2023-10-19 10:26:02--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T082450Z&X-Amz-Expires=300&X-Amz-Signature=6b3a161fd606be51c3d38255953514962dddf247a1bcff596fd6d9373ceb5ce7&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 99521748 (95M) [application/octet-stream]
+Saving to: âSwarm.Desktop-0.30.0-arm64.dmgâ
+
+     0K .......... .......... .......... .......... ..........  0% 3.66M 26s
+    50K .......... .......... .......... .......... ..........  ...... 99% 10.1M 0s
+ 96950K .......... .......... .......... .......... .......... 99% 5.82M 0s
+ 97000K .......... .......... .......... .......... .......... 99% 13.9M 0s
+ 97050K .......... .......... .......... .......... .......... 99% 9.41M 0s
+ 97100K .......... .......... .......... .......... .......... 99% 6.24M 0s
+ 97150K .......... .......... .......... .........            100% 7.71M=15s
+
+2023-10-19 10:26:17 (6.17 MB/s) - âSwarm.Desktop-0.30.0-arm64.dmgâ saved [99521748/99521748]
+
+
+2023/10/19 10:26:21 stdout MOUNT SWARM DESKTOP.DMG: Checksumming Protective Master Boot Record (MBR : 0)…
+Protective Master Boot Record (MBR :: verified CRC32 $F5E8FC93
+Checksumming GPT Header (Primary GPT Header : 1)…
+ GPT Header (Primary GPT Header : 1): verified CRC32 $8B031ED6
+Checksumming GPT Partition Data (Primary GPT Table : 2)…
+GPT Partition Data (Primary GPT Tabl: verified CRC32 $9228D4C7
+Checksumming  (Apple_Free : 3)…
+                    (Apple_Free : 3): verified CRC32 $00000000
+Checksumming disk image (Apple_HFS : 4)…
+          disk image (Apple_HFS : 4): verified CRC32 $9637F3A7
+Checksumming  (Apple_Free : 5)…
+                    (Apple_Free : 5): verified CRC32 $00000000
+Checksumming GPT Partition Data (Backup GPT Table : 6)…
+GPT Partition Data (Backup GPT Table: verified CRC32 $9228D4C7
+Checksumming GPT Header (Backup GPT Header : 7)…
+  GPT Header (Backup GPT Header : 7): verified CRC32 $53B79C5A
+verified CRC32 $835C0D93
+/dev/disk4          	GUID_partition_scheme          	
+/dev/disk4s1        	Apple_HFS                      	/Volumes/Swarm Desktop
+
+2023/10/19 10:26:21 stderr MOUNT SWARM DESKTOP.DMG: 
+2023/10/19 10:26:24 stdout INSTALL SWARM DESKTOP.APP: 
+2023/10/19 10:26:24 stderr INSTALL SWARM DESKTOP.APP: 
+2023/10/19 10:26:24 Installation success 
+2023/10/19 10:26:27 stdout OPEN SWARM DESKTOP.APP: 
+2023/10/19 10:26:27 stderr OPEN SWARM DESKTOP.APP: 
+2023/10/19 10:26:57 stdout CHECK DATA-DIR EXISTENCE: 
+2023/10/19 10:26:57 stderr CHECK DATA-DIR EXISTENCE: /usr/bin/cd: line 4: cd: /Users/zolmac/Library/Application Support/Swarm Desktop: No such file or directory
+
+2023/10/19 10:27:00 open /Users/zolmac/Library/Logs/Swarm Desktop/bee.current.log: no such file or directory
+2023/10/19 10:27:03 stdout EXIT SWARM DESKTOP.APP: 
+2023/10/19 10:27:03 stderr EXIT SWARM DESKTOP.APP: 
+2023/10/19 10:27:03 stdout EXIT SAFARI: 
+2023/10/19 10:27:03 stderr EXIT SAFARI: 
+2023/10/19 10:27:06 stdout Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 10:27:06 stderr Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 10:27:06 stdout Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 10:27:06 stderr Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 10:27:06 stdout Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: 
+2023/10/19 10:27:06 stderr Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: rm: /Users/zolmac/Library/Logs/Swarm Desktop/: No such file or directory
+
+2023/10/19 10:27:06 stdout UNMOUNT SWARM DESKTOP.DMG: "disk4" ejected.
+
+2023/10/19 10:27:06 stderr UNMOUNT SWARM DESKTOP.DMG: 
+2023/10/19 10:27:06 Detach success: "disk4" ejected.
+
+2023/10/19 10:27:08 stdout DELETE SWARM DESKTOP DMG: 
+2023/10/19 10:27:08 stderr DELETE SWARM DESKTOP DMG: 
+2023/10/19 10:27:12 
+
+
+
+
+TEST ROUND No.3 at 2023-10-19 10:27:12.840119 +0200 CEST m=+147.618736668
+
+2023/10/19 10:27:28 stderr DOWNLOAD SWARM DESKTOP: --2023-10-19 10:27:12--  https://github.com/ethersphere/swarm-desktop/releases/download/v0.30.0/Swarm.Desktop-0.30.0-arm64.dmg
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T082713Z&X-Amz-Expires=300&X-Amz-Signature=a808976ea1a700d8eaa7e6bd07f26251a1faef7024282859a933fa12d6d601ac&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream [following]
+--2023-10-19 10:27:13--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T082713Z&X-Amz-Expires=300&X-Amz-Signature=a808976ea1a700d8eaa7e6bd07f26251a1faef7024282859a933fa12d6d601ac&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 99521748 (95M) [application/octet-stream]
+Saving to: âSwarm.Desktop-0.30.0-arm64.dmgâ
+
+     0K .......... .......... .......... .......... ..........  0% 1.26M 75s
+    50K .......... .......... .......... .......... ..........  ...... 99% 6.70M 0s
+ 96950K .......... .......... .......... .......... .......... 99% 13.3M 0s
+ 97000K .......... .......... .......... .......... .......... 99% 5.25M 0s
+ 97050K .......... .......... .......... .......... .......... 99% 17.2M 0s
+ 97100K .......... .......... .......... .......... .......... 99% 2.82M 0s
+ 97150K .......... .......... .......... .........            100% 8.32M=15s
+
+2023-10-19 10:27:28 (6.47 MB/s) - âSwarm.Desktop-0.30.0-arm64.dmgâ saved [99521748/99521748]
+
+
+2023/10/19 10:27:32 stdout MOUNT SWARM DESKTOP.DMG: Checksumming Protective Master Boot Record (MBR : 0)…
+Protective Master Boot Record (MBR :: verified CRC32 $F5E8FC93
+Checksumming GPT Header (Primary GPT Header : 1)…
+ GPT Header (Primary GPT Header : 1): verified CRC32 $8B031ED6
+Checksumming GPT Partition Data (Primary GPT Table : 2)…
+GPT Partition Data (Primary GPT Tabl: verified CRC32 $9228D4C7
+Checksumming  (Apple_Free : 3)…
+                    (Apple_Free : 3): verified CRC32 $00000000
+Checksumming disk image (Apple_HFS : 4)…
+          disk image (Apple_HFS : 4): verified CRC32 $9637F3A7
+Checksumming  (Apple_Free : 5)…
+                    (Apple_Free : 5): verified CRC32 $00000000
+Checksumming GPT Partition Data (Backup GPT Table : 6)…
+GPT Partition Data (Backup GPT Table: verified CRC32 $9228D4C7
+Checksumming GPT Header (Backup GPT Header : 7)…
+  GPT Header (Backup GPT Header : 7): verified CRC32 $53B79C5A
+verified CRC32 $835C0D93
+/dev/disk4          	GUID_partition_scheme          	
+/dev/disk4s1        	Apple_HFS                      	/Volumes/Swarm Desktop
+
+2023/10/19 10:27:32 stderr MOUNT SWARM DESKTOP.DMG: 
+2023/10/19 10:27:35 stdout INSTALL SWARM DESKTOP.APP: 
+2023/10/19 10:27:35 stderr INSTALL SWARM DESKTOP.APP: 
+2023/10/19 10:27:35 Installation success 
+2023/10/19 10:27:38 stdout OPEN SWARM DESKTOP.APP: 
+2023/10/19 10:27:38 stderr OPEN SWARM DESKTOP.APP: 
+2023/10/19 10:28:08 stdout CHECK DATA-DIR EXISTENCE: 
+2023/10/19 10:28:08 stderr CHECK DATA-DIR EXISTENCE: /usr/bin/cd: line 4: cd: /Users/zolmac/Library/Application Support/Swarm Desktop: No such file or directory
+
+2023/10/19 10:28:11 open /Users/zolmac/Library/Logs/Swarm Desktop/bee.current.log: no such file or directory
+2023/10/19 10:28:14 stdout EXIT SWARM DESKTOP.APP: 
+2023/10/19 10:28:14 stderr EXIT SWARM DESKTOP.APP: 
+2023/10/19 10:28:14 stdout EXIT SAFARI: 
+2023/10/19 10:28:14 stderr EXIT SAFARI: 
+2023/10/19 10:28:17 stdout Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 10:28:17 stderr Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 10:28:17 stdout Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 10:28:17 stderr Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 10:28:17 stdout Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: 
+2023/10/19 10:28:17 stderr Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: rm: /Users/zolmac/Library/Logs/Swarm Desktop/: No such file or directory
+
+2023/10/19 10:28:17 stdout UNMOUNT SWARM DESKTOP.DMG: "disk4" ejected.
+
+2023/10/19 10:28:17 stderr UNMOUNT SWARM DESKTOP.DMG: 
+2023/10/19 10:28:17 Detach success: "disk4" ejected.
+
+2023/10/19 10:28:19 stdout DELETE SWARM DESKTOP DMG: 
+2023/10/19 10:28:19 stderr DELETE SWARM DESKTOP DMG: 
+2023/10/19 10:29:46 
+
+
+
+
+TEST ROUND No.1 at 2023-10-19 10:29:46.60262 +0200 CEST m=+6.529573710
+
+2023/10/19 10:30:02 stderr DOWNLOAD SWARM DESKTOP: --2023-10-19 10:29:46--  https://github.com/ethersphere/swarm-desktop/releases/download/v0.30.0/Swarm.Desktop-0.30.0-arm64.dmg
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T082946Z&X-Amz-Expires=300&X-Amz-Signature=c3e5fdd14fc8e2f7c8fcf941175af123f712d64fa0bd71226441273f8dd72526&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream [following]
+--2023-10-19 10:29:46--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T082946Z&X-Amz-Expires=300&X-Amz-Signature=c3e5fdd14fc8e2f7c8fcf941175af123f712d64fa0bd71226441273f8dd72526&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 99521748 (95M) [application/octet-stream]
+Saving to: âSwarm.Desktop-0.30.0-arm64.dmgâ
+
+     0K .......... .......... .......... .......... ..........  0% 2.67M 35s
+    50K .......... .......... .......... .......... ..........  ...... 99% 4.91M 0s
+ 96950K .......... .......... .......... .......... .......... 99% 8.93M 0s
+ 97000K .......... .......... .......... .......... .......... 99% 8.98M 0s
+ 97050K .......... .......... .......... .......... .......... 99% 9.80M 0s
+ 97100K .......... .......... .......... .......... .......... 99% 2.51M 0s
+ 97150K .......... .......... .......... .........            100% 5.16M=16s
+
+2023-10-19 10:30:02 (6.04 MB/s) - âSwarm.Desktop-0.30.0-arm64.dmgâ saved [99521748/99521748]
+
+
+2023/10/19 10:30:08 stdout MOUNT SWARM DESKTOP.DMG: Checksumming Protective Master Boot Record (MBR : 0)…
+Protective Master Boot Record (MBR :: verified CRC32 $F5E8FC93
+Checksumming GPT Header (Primary GPT Header : 1)…
+ GPT Header (Primary GPT Header : 1): verified CRC32 $8B031ED6
+Checksumming GPT Partition Data (Primary GPT Table : 2)…
+GPT Partition Data (Primary GPT Tabl: verified CRC32 $9228D4C7
+Checksumming  (Apple_Free : 3)…
+                    (Apple_Free : 3): verified CRC32 $00000000
+Checksumming disk image (Apple_HFS : 4)…
+          disk image (Apple_HFS : 4): verified CRC32 $9637F3A7
+Checksumming  (Apple_Free : 5)…
+                    (Apple_Free : 5): verified CRC32 $00000000
+Checksumming GPT Partition Data (Backup GPT Table : 6)…
+GPT Partition Data (Backup GPT Table: verified CRC32 $9228D4C7
+Checksumming GPT Header (Backup GPT Header : 7)…
+  GPT Header (Backup GPT Header : 7): verified CRC32 $53B79C5A
+verified CRC32 $835C0D93
+/dev/disk4          	GUID_partition_scheme          	
+/dev/disk4s1        	Apple_HFS                      	/Volumes/Swarm Desktop
+
+2023/10/19 10:30:08 stderr MOUNT SWARM DESKTOP.DMG: 
+2023/10/19 10:30:11 stdout INSTALL SWARM DESKTOP.APP: 
+2023/10/19 10:30:11 stderr INSTALL SWARM DESKTOP.APP: cp: /Applications/Swarm Desktop.app/Contents/Resources/app.asar: fchmod failed: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/app.asar: could not copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/app.asar: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/ar.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/ar.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/ar.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/bg.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/bg.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/bg.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/bn.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/bn.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/bn.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/ca.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/ca.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/ca.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/cs.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/cs.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/cs.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/da.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/da.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/da.lproj: Operatid
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/zh_CN.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/zh_CN.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/zh_TW.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/zh_TW.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/zh_TW.lproj: Operation not permitted
+
+2023/10/19 10:30:11 stdout UNMOUNT SWARM DESKTOP.DMG: "disk4" ejected.
+
+2023/10/19 10:30:11 stderr UNMOUNT SWARM DESKTOP.DMG: 
+2023/10/19 10:30:11 Detach success: "disk4" ejected.
+
+2023/10/19 10:30:13 stdout DELETE SWARM DESKTOP DMG: 
+2023/10/19 10:30:13 stderr DELETE SWARM DESKTOP DMG: 
+2023/10/19 10:33:04 
+
+
+
+
+TEST ROUND No.1 at 2023-10-19 10:33:04.441275 +0200 CEST m=+2.746810585
+
+2023/10/19 10:33:18 stderr DOWNLOAD SWARM DESKTOP: --2023-10-19 10:33:04--  https://github.com/ethersphere/swarm-desktop/releases/download/v0.30.0/Swarm.Desktop-0.30.0-arm64.dmg
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T083304Z&X-Amz-Expires=300&X-Amz-Signature=98f98c16388ba0a96ca687316c8140d80b43dfd43b865537938d33b1dc6ec96f&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream [following]
+--2023-10-19 10:33:04--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T083304Z&X-Amz-Expires=300&X-Amz-Signature=98f98c16388ba0a96ca687316c8140d80b43dfd43b865537938d33b1dc6ec96f&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 99521748 (95M) [application/octet-stream]
+Saving to: âSwarm.Desktop-0.30.0-arm64.dmgâ
+
+     0K .......... .......... .......... .......... ..........  0% 1.78M 53s
+    50K .......... .......... .......... .......... ..........  ...... 99% 9.90M 0s
+ 96950K .......... .......... .......... .......... .......... 99% 10.8M 0s
+ 97000K .......... .......... .......... .......... .......... 99% 4.50M 0s
+ 97050K .......... .......... .......... .......... .......... 99% 11.6M 0s
+ 97100K .......... .......... .......... .......... .......... 99% 4.14M 0s
+ 97150K .......... .......... .......... .........            100% 50.6M=14s
+
+2023-10-19 10:33:18 (6.90 MB/s) - âSwarm.Desktop-0.30.0-arm64.dmgâ saved [99521748/99521748]
+
+
+2023/10/19 10:33:24 stdout MOUNT SWARM DESKTOP.DMG: Checksumming Protective Master Boot Record (MBR : 0)…
+Protective Master Boot Record (MBR :: verified CRC32 $F5E8FC93
+Checksumming GPT Header (Primary GPT Header : 1)…
+ GPT Header (Primary GPT Header : 1): verified CRC32 $8B031ED6
+Checksumming GPT Partition Data (Primary GPT Table : 2)…
+GPT Partition Data (Primary GPT Tabl: verified CRC32 $9228D4C7
+Checksumming  (Apple_Free : 3)…
+                    (Apple_Free : 3): verified CRC32 $00000000
+Checksumming disk image (Apple_HFS : 4)…
+          disk image (Apple_HFS : 4): verified CRC32 $9637F3A7
+Checksumming  (Apple_Free : 5)…
+                    (Apple_Free : 5): verified CRC32 $00000000
+Checksumming GPT Partition Data (Backup GPT Table : 6)…
+GPT Partition Data (Backup GPT Table: verified CRC32 $9228D4C7
+Checksumming GPT Header (Backup GPT Header : 7)…
+  GPT Header (Backup GPT Header : 7): verified CRC32 $53B79C5A
+verified CRC32 $835C0D93
+/dev/disk4          	GUID_partition_scheme          	
+/dev/disk4s1        	Apple_HFS                      	/Volumes/Swarm Desktop
+
+2023/10/19 10:33:24 stderr MOUNT SWARM DESKTOP.DMG: 
+2023/10/19 10:33:27 stdout INSTALL SWARM DESKTOP.APP: 
+2023/10/19 10:33:27 stderr INSTALL SWARM DESKTOP.APP: cp: /Applications/Swarm Desktop.app/Contents/Resources/app.asar: fchmod failed: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/app.asar: could not copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/app.asar: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/ar.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/ar.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/ar.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/bg.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/bg.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/bg.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/bn.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/bn.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/bn.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/ca.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/ca.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/ca.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/cs.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/cs.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/cs.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/da.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/da.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/da.lproj: Operatid
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/zh_CN.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/zh_CN.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/zh_TW.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/zh_TW.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/zh_TW.lproj: Operation not permitted
+
+2023/10/19 10:33:27 stdout UNMOUNT SWARM DESKTOP.DMG: "disk4" ejected.
+
+2023/10/19 10:33:27 stderr UNMOUNT SWARM DESKTOP.DMG: 
+2023/10/19 10:33:27 Detach success: "disk4" ejected.
+
+2023/10/19 10:33:29 stdout DELETE SWARM DESKTOP DMG: 
+2023/10/19 10:33:29 stderr DELETE SWARM DESKTOP DMG: 
+2023/10/19 10:53:21 
+
+
+
+
+TEST ROUND No.1 at 2023-10-19 10:53:21.068047 +0200 CEST m=+5.157261793
+
+2023/10/19 10:53:39 stderr DOWNLOAD SWARM DESKTOP: --2023-10-19 10:53:21--  https://github.com/ethersphere/swarm-desktop/releases/download/v0.30.0/Swarm.Desktop-0.30.0-arm64.dmg
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T085321Z&X-Amz-Expires=300&X-Amz-Signature=2579fdbe2e8881efdb4d89dca77f20f1568aa709182a150cd31d7cd66b01de2b&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream [following]
+--2023-10-19 10:53:21--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T085321Z&X-Amz-Expires=300&X-Amz-Signature=2579fdbe2e8881efdb4d89dca77f20f1568aa709182a150cd31d7cd66b01de2b&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 99521748 (95M) [application/octet-stream]
+Saving to: âSwarm.Desktop-0.30.0-arm64.dmgâ
+
+     0K .......... .......... .......... .......... ..........  0% 1.07M 89s
+    50K .......... .......... .......... .......... ..........  ...... 99% 5.81M 0s
+ 96950K .......... .......... .......... .......... .......... 99% 11.9M 0s
+ 97000K .......... .......... .......... .......... .......... 99% 4.29M 0s
+ 97050K .......... .......... .......... .......... .......... 99% 5.34M 0s
+ 97100K .......... .......... .......... .......... .......... 99% 6.29M 0s
+ 97150K .......... .......... .......... .........            100% 7.13M=17s
+
+2023-10-19 10:53:39 (5.47 MB/s) - âSwarm.Desktop-0.30.0-arm64.dmgâ saved [99521748/99521748]
+
+
+2023/10/19 10:53:43 stdout MOUNT SWARM DESKTOP.DMG: Checksumming Protective Master Boot Record (MBR : 0)…
+Protective Master Boot Record (MBR :: verified CRC32 $F5E8FC93
+Checksumming GPT Header (Primary GPT Header : 1)…
+ GPT Header (Primary GPT Header : 1): verified CRC32 $8B031ED6
+Checksumming GPT Partition Data (Primary GPT Table : 2)…
+GPT Partition Data (Primary GPT Tabl: verified CRC32 $9228D4C7
+Checksumming  (Apple_Free : 3)…
+                    (Apple_Free : 3): verified CRC32 $00000000
+Checksumming disk image (Apple_HFS : 4)…
+          disk image (Apple_HFS : 4): verified CRC32 $9637F3A7
+Checksumming  (Apple_Free : 5)…
+                    (Apple_Free : 5): verified CRC32 $00000000
+Checksumming GPT Partition Data (Backup GPT Table : 6)…
+GPT Partition Data (Backup GPT Table: verified CRC32 $9228D4C7
+Checksumming GPT Header (Backup GPT Header : 7)…
+  GPT Header (Backup GPT Header : 7): verified CRC32 $53B79C5A
+verified CRC32 $835C0D93
+/dev/disk4          	GUID_partition_scheme          	
+/dev/disk4s1        	Apple_HFS                      	/Volumes/Swarm Desktop
+
+2023/10/19 10:53:43 stderr MOUNT SWARM DESKTOP.DMG: 
+2023/10/19 10:53:46 stdout INSTALL SWARM DESKTOP.APP: 
+2023/10/19 10:53:46 stderr INSTALL SWARM DESKTOP.APP: cp: /Applications/Swarm Desktop.app/Contents/Resources/app.asar: fchmod failed: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/app.asar: could not copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/app.asar: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/ar.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/ar.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/ar.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/bg.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/bg.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/bg.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/bn.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/bn.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/bn.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/ca.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/ca.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/ca.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/cs.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/cs.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/cs.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/da.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/da.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/da.lproj: Operatid
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/zh_CN.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/zh_CN.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/zh_TW.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/zh_TW.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/zh_TW.lproj: Operation not permitted
+
+2023/10/19 10:53:46 stdout UNMOUNT SWARM DESKTOP.DMG: "disk4" ejected.
+
+2023/10/19 10:53:46 stderr UNMOUNT SWARM DESKTOP.DMG: 
+2023/10/19 10:53:46 Detach success: "disk4" ejected.
+
+2023/10/19 10:53:48 stdout DELETE SWARM DESKTOP DMG: 
+2023/10/19 10:53:48 stderr DELETE SWARM DESKTOP DMG: 
+2023/10/19 10:53:52 
+
+
+
+
+TEST ROUND No.2 at 2023-10-19 10:53:52.580771 +0200 CEST m=+36.670220585
+
+2023/10/19 10:54:15 stderr DOWNLOAD SWARM DESKTOP: --2023-10-19 10:53:52--  https://github.com/ethersphere/swarm-desktop/releases/download/v0.30.0/Swarm.Desktop-0.30.0-arm64.dmg
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T085321Z&X-Amz-Expires=300&X-Amz-Signature=2579fdbe2e8881efdb4d89dca77f20f1568aa709182a150cd31d7cd66b01de2b&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream [following]
+--2023-10-19 10:53:52--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T085321Z&X-Amz-Expires=300&X-Amz-Signature=2579fdbe2e8881efdb4d89dca77f20f1568aa709182a150cd31d7cd66b01de2b&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 99521748 (95M) [application/octet-stream]
+Saving to: âSwarm.Desktop-0.30.0-arm64.dmgâ
+
+     0K .......... .......... .......... .......... ..........  0% 2.87M 33s
+    50K .......... .......... .......... .......... ..........  ...... 99% 5.91M 0s
+ 96950K .......... .......... .......... .......... .......... 99% 3.62M 0s
+ 97000K .......... .......... .......... .......... .......... 99% 5.00M 0s
+ 97050K .......... .......... .......... .......... .......... 99% 11.4M 0s
+ 97100K .......... .......... .......... .......... .......... 99% 4.26M 0s
+ 97150K .......... .......... .......... .........            100% 6.31M=23s
+
+2023-10-19 10:54:15 (4.18 MB/s) - âSwarm.Desktop-0.30.0-arm64.dmgâ saved [99521748/99521748]
+
+
+2023/10/19 10:54:20 stdout MOUNT SWARM DESKTOP.DMG: Checksumming Protective Master Boot Record (MBR : 0)…
+Protective Master Boot Record (MBR :: verified CRC32 $F5E8FC93
+Checksumming GPT Header (Primary GPT Header : 1)…
+ GPT Header (Primary GPT Header : 1): verified CRC32 $8B031ED6
+Checksumming GPT Partition Data (Primary GPT Table : 2)…
+GPT Partition Data (Primary GPT Tabl: verified CRC32 $9228D4C7
+Checksumming  (Apple_Free : 3)…
+                    (Apple_Free : 3): verified CRC32 $00000000
+Checksumming disk image (Apple_HFS : 4)…
+          disk image (Apple_HFS : 4): verified CRC32 $9637F3A7
+Checksumming  (Apple_Free : 5)…
+                    (Apple_Free : 5): verified CRC32 $00000000
+Checksumming GPT Partition Data (Backup GPT Table : 6)…
+GPT Partition Data (Backup GPT Table: verified CRC32 $9228D4C7
+Checksumming GPT Header (Backup GPT Header : 7)…
+  GPT Header (Backup GPT Header : 7): verified CRC32 $53B79C5A
+verified CRC32 $835C0D93
+/dev/disk4          	GUID_partition_scheme          	
+/dev/disk4s1        	Apple_HFS                      	/Volumes/Swarm Desktop
+
+2023/10/19 10:54:20 stderr MOUNT SWARM DESKTOP.DMG: 
+2023/10/19 10:54:23 stdout INSTALL SWARM DESKTOP.APP: 
+2023/10/19 10:54:23 stderr INSTALL SWARM DESKTOP.APP: cp: /Applications/Swarm Desktop.app/Contents/Resources/app.asar: fchmod failed: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/app.asar: could not copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/app.asar: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/ar.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/ar.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/ar.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/bg.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/bg.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/bg.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/bn.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/bn.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/bn.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/ca.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/ca.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/ca.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/cs.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/cs.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/cs.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/da.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/da.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/da.lproj: Operatid
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/zh_CN.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/zh_CN.lproj: Operation not permitted
+cp: /Applications/Swarm Desktop.app/Contents/Resources/zh_TW.lproj: Operation not permitted
+cp: /Volumes/Swarm Desktop/Swarm Desktop.app/Contents/Resources/zh_TW.lproj: unable to copy extended attributes to /Applications/Swarm Desktop.app/Contents/Resources/zh_TW.lproj: Operation not permitted
+
+2023/10/19 10:54:23 stdout UNMOUNT SWARM DESKTOP.DMG: "disk4" ejected.
+
+2023/10/19 10:54:23 stderr UNMOUNT SWARM DESKTOP.DMG: 
+2023/10/19 10:54:23 Detach success: "disk4" ejected.
+
+2023/10/19 10:54:25 stdout DELETE SWARM DESKTOP DMG: 
+2023/10/19 10:54:25 stderr DELETE SWARM DESKTOP DMG: 
+2023/10/19 10:54:29 
+
+
+
+
+TEST ROUND No.3 at 2023-10-19 10:54:29.575973 +0200 CEST m=+73.665698501
+
+2023/10/19 10:54:45 stderr DOWNLOAD SWARM DESKTOP: --2023-10-19 10:54:29--  https://github.com/ethersphere/swarm-desktop/releases/download/v0.30.0/Swarm.Desktop-0.30.0-arm64.dmg
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T085321Z&X-Amz-Expires=300&X-Amz-Signature=2579fdbe2e8881efdb4d89dca77f20f1568aa709182a150cd31d7cd66b01de2b&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream [following]
+--2023-10-19 10:54:29--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T085321Z&X-Amz-Expires=300&X-Amz-Signature=2579fdbe2e8881efdb4d89dca77f20f1568aa709182a150cd31d7cd66b01de2b&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 99521748 (95M) [application/octet-stream]
+Saving to: âSwarm.Desktop-0.30.0-arm64.dmgâ
+
+     0K .......... .......... .......... .......... ..........  0% 3.09M 31s
+    50K .......... .......... .......... .......... ..........  ...... 99% 5.00M 0s
+ 96950K .......... .......... .......... .......... .......... 99% 7.98M 0s
+ 97000K .......... .......... .......... .......... .......... 99% 5.75M 0s
+ 97050K .......... .......... .......... .......... .......... 99% 13.3M 0s
+ 97100K .......... .......... .......... .......... .......... 99% 7.66M 0s
+ 97150K .......... .......... .......... .........            100% 9.73M=16s
+
+2023-10-19 10:54:45 (5.99 MB/s) - âSwarm.Desktop-0.30.0-arm64.dmgâ saved [99521748/99521748]
+
+
+2023/10/19 10:54:49 stdout MOUNT SWARM DESKTOP.DMG: Checksumming Protective Master Boot Record (MBR : 0)…
+Protective Master Boot Record (MBR :: verified CRC32 $F5E8FC93
+Checksumming GPT Header (Primary GPT Header : 1)…
+ GPT Header (Primary GPT Header : 1): verified CRC32 $8B031ED6
+Checksumming GPT Partition Data (Primary GPT Table : 2)…
+GPT Partition Data (Primary GPT Tabl: verified CRC32 $9228D4C7
+Checksumming  (Apple_Free : 3)…
+                    (Apple_Free : 3): verified CRC32 $00000000
+Checksumming disk image (Apple_HFS : 4)…
+          disk image (Apple_HFS : 4): verified CRC32 $9637F3A7
+Checksumming  (Apple_Free : 5)…
+                    (Apple_Free : 5): verified CRC32 $00000000
+Checksumming GPT Partition Data (Backup GPT Table : 6)…
+GPT Partition Data (Backup GPT Table: verified CRC32 $9228D4C7
+Checksumming GPT Header (Backup GPT Header : 7)…
+  GPT Header (Backup GPT Header : 7): verified CRC32 $53B79C5A
+verified CRC32 $835C0D93
+/dev/disk4          	GUID_partition_scheme          	
+/dev/disk4s1        	Apple_HFS                      	/Volumes/Swarm Desktop
+
+2023/10/19 10:54:49 stderr MOUNT SWARM DESKTOP.DMG: 
+2023/10/19 10:54:52 stdout INSTALL SWARM DESKTOP.APP: 
+2023/10/19 10:54:52 stderr INSTALL SWARM DESKTOP.APP: 
+2023/10/19 10:54:52 Installation success 
+2023/10/19 10:54:55 stdout OPEN SWARM DESKTOP.APP: 
+2023/10/19 10:54:55 stderr OPEN SWARM DESKTOP.APP: 
+2023/10/19 10:55:25 stdout CHECK DATA-DIR EXISTENCE: 
+2023/10/19 10:55:25 stderr CHECK DATA-DIR EXISTENCE: 
+2023/10/19 10:55:28 Found bee.log: "msg"="using chain with network network" "chain_id"=100 "network_id"=1
+2023/10/19 10:55:28 Found bee.log: "msg"="starting debug server" "address"="127.0.0.1:1635"
+2023/10/19 10:55:28 Found bee.log: "msg"="using datadir" "path"="/Users/zolmac/Library/Application Support/Swarm Desktop/data-dir"
+2023/10/19 10:55:28 Found bee.log: "msg"="starting in ultra-light mode"
+2023/10/19 10:55:28 Found bee.log: "msg"="connected" "tld"="" "endpoint"="https://cloudflare-eth.com"
+2023/10/19 10:55:28 Found bee.log: "msg"="starting api server" "address"="127.0.0.1:1633"
+2023/10/19 10:55:31 stdout EXIT SWARM DESKTOP.APP: 
+2023/10/19 10:55:31 stderr EXIT SWARM DESKTOP.APP: No matching processes belonging to you were found
+
+2023/10/19 10:55:31 stdout EXIT SAFARI: 
+2023/10/19 10:55:31 stderr EXIT SAFARI: 
+2023/10/19 10:55:34 stdout Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 10:55:34 stderr Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 10:55:34 stdout Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 10:55:34 stderr Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 10:55:34 stdout Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: 
+2023/10/19 10:55:34 stderr Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: 
+2023/10/19 10:55:34 stdout UNMOUNT SWARM DESKTOP.DMG: "disk4" ejected.
+
+2023/10/19 10:55:34 stderr UNMOUNT SWARM DESKTOP.DMG: 
+2023/10/19 10:55:34 Detach success: "disk4" ejected.
+
+2023/10/19 10:55:36 stdout DELETE SWARM DESKTOP DMG: 
+2023/10/19 10:55:36 stderr DELETE SWARM DESKTOP DMG: 
+2023/10/19 11:04:20 
+
+
+
+
+TEST ROUND No.1 at 2023-10-19 11:04:20.02792 +0200 CEST m=+2.661543918
+
+2023/10/19 11:04:33 stderr DOWNLOAD SWARM DESKTOP: --2023-10-19 11:04:20--  https://github.com/ethersphere/swarm-desktop/releases/download/v0.30.0/Swarm.Desktop-0.30.0-arm64.dmg
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T090420Z&X-Amz-Expires=300&X-Amz-Signature=b793722968791304d4bf9c4c1fba6fb4e73dd14607c9fd6bf3abf5977802ea4b&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream [following]
+--2023-10-19 11:04:20--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T090420Z&X-Amz-Expires=300&X-Amz-Signature=b793722968791304d4bf9c4c1fba6fb4e73dd14607c9fd6bf3abf5977802ea4b&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 99521748 (95M) [application/octet-stream]
+Saving to: âSwarm.Desktop-0.30.0-arm64.dmgâ
+
+     0K .......... .......... .......... .......... ..........  0% 4.40M 22s
+    50K .......... .......... .......... .......... ..........  ...... 99% 5.47M 0s
+ 96950K .......... .......... .......... .......... .......... 99% 5.29M 0s
+ 97000K .......... .......... .......... .......... .......... 99% 5.75M 0s
+ 97050K .......... .......... .......... .......... .......... 99% 13.2M 0s
+ 97100K .......... .......... .......... .......... .......... 99% 6.51M 0s
+ 97150K .......... .......... .......... .........            100% 10.1M=13s
+
+2023-10-19 11:04:33 (7.18 MB/s) - âSwarm.Desktop-0.30.0-arm64.dmgâ saved [99521748/99521748]
+
+
+2023/10/19 11:04:37 stdout MOUNT SWARM DESKTOP.DMG: Checksumming Protective Master Boot Record (MBR : 0)…
+Protective Master Boot Record (MBR :: verified CRC32 $F5E8FC93
+Checksumming GPT Header (Primary GPT Header : 1)…
+ GPT Header (Primary GPT Header : 1): verified CRC32 $8B031ED6
+Checksumming GPT Partition Data (Primary GPT Table : 2)…
+GPT Partition Data (Primary GPT Tabl: verified CRC32 $9228D4C7
+Checksumming  (Apple_Free : 3)…
+                    (Apple_Free : 3): verified CRC32 $00000000
+Checksumming disk image (Apple_HFS : 4)…
+          disk image (Apple_HFS : 4): verified CRC32 $9637F3A7
+Checksumming  (Apple_Free : 5)…
+                    (Apple_Free : 5): verified CRC32 $00000000
+Checksumming GPT Partition Data (Backup GPT Table : 6)…
+GPT Partition Data (Backup GPT Table: verified CRC32 $9228D4C7
+Checksumming GPT Header (Backup GPT Header : 7)…
+  GPT Header (Backup GPT Header : 7): verified CRC32 $53B79C5A
+verified CRC32 $835C0D93
+/dev/disk4          	GUID_partition_scheme          	
+/dev/disk4s1        	Apple_HFS                      	/Volumes/Swarm Desktop
+
+2023/10/19 11:04:37 stderr MOUNT SWARM DESKTOP.DMG: 
+2023/10/19 11:04:40 stdout INSTALL SWARM DESKTOP.APP: 
+2023/10/19 11:04:40 stderr INSTALL SWARM DESKTOP.APP: 
+2023/10/19 11:04:40 Installation success 
+2023/10/19 11:04:43 stdout OPEN SWARM DESKTOP.APP: 
+2023/10/19 11:04:43 stderr OPEN SWARM DESKTOP.APP: 
+2023/10/19 11:05:13 stdout CHECK DATA-DIR EXISTENCE: 
+2023/10/19 11:05:13 stderr CHECK DATA-DIR EXISTENCE: 
+2023/10/19 11:05:16 Found bee.log: "msg"="using chain with network network" "chain_id"=100 "network_id"=1
+2023/10/19 11:05:16 Found bee.log: "msg"="starting debug server" "address"="127.0.0.1:1635"
+2023/10/19 11:05:16 Found bee.log: "msg"="using datadir" "path"="/Users/zolmac/Library/Application Support/Swarm Desktop/data-dir"
+2023/10/19 11:05:16 Found bee.log: "msg"="starting in ultra-light mode"
+2023/10/19 11:05:16 Found bee.log: "msg"="connected" "tld"="" "endpoint"="https://cloudflare-eth.com"
+2023/10/19 11:05:16 Found bee.log: "msg"="starting api server" "address"="127.0.0.1:1633"
+2023/10/19 11:05:19 stdout EXIT SWARM DESKTOP.APP: 
+2023/10/19 11:05:19 stderr EXIT SWARM DESKTOP.APP: 
+2023/10/19 11:05:19 stdout EXIT SAFARI: 
+2023/10/19 11:05:19 stderr EXIT SAFARI: 
+2023/10/19 11:05:22 stdout Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 11:05:22 stderr Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 11:05:22 stdout Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 11:05:22 stderr Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 11:05:22 stdout Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: 
+2023/10/19 11:05:22 stderr Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: 
+2023/10/19 11:05:22 stdout UNMOUNT SWARM DESKTOP.DMG: "disk4" ejected.
+
+2023/10/19 11:05:22 stderr UNMOUNT SWARM DESKTOP.DMG: 
+2023/10/19 11:05:22 Detach success: "disk4" ejected.
+
+2023/10/19 11:05:24 stdout DELETE SWARM DESKTOP DMG: 
+2023/10/19 11:05:24 stderr DELETE SWARM DESKTOP DMG: 
+2023/10/19 11:05:28 
+
+
+
+
+TEST ROUND No.2 at 2023-10-19 11:05:28.947849 +0200 CEST m=+71.581985460
+
+2023/10/19 11:05:43 stderr DOWNLOAD SWARM DESKTOP: --2023-10-19 11:05:28--  https://github.com/ethersphere/swarm-desktop/releases/download/v0.30.0/Swarm.Desktop-0.30.0-arm64.dmg
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T090529Z&X-Amz-Expires=300&X-Amz-Signature=ab40e63aa215ef93dca29caf29daff8918dad91300170d15c10ca01d64c6dfe0&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream [following]
+--2023-10-19 11:05:29--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T090529Z&X-Amz-Expires=300&X-Amz-Signature=ab40e63aa215ef93dca29caf29daff8918dad91300170d15c10ca01d64c6dfe0&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 99521748 (95M) [application/octet-stream]
+Saving to: âSwarm.Desktop-0.30.0-arm64.dmgâ
+
+     0K .......... .......... .......... .......... ..........  0% 2.74M 35s
+    50K .......... .......... .......... .......... ..........  ...... 99% 8.69M 0s
+ 96950K .......... .......... .......... .......... .......... 99% 8.77M 0s
+ 97000K .......... .......... .......... .......... .......... 99% 9.69M 0s
+ 97050K .......... .......... .......... .......... .......... 99% 11.4M 0s
+ 97100K .......... .......... .......... .......... .......... 99% 4.71M 0s
+ 97150K .......... .......... .......... .........            100% 11.7M=14s
+
+2023-10-19 11:05:43 (6.87 MB/s) - âSwarm.Desktop-0.30.0-arm64.dmgâ saved [99521748/99521748]
+
+
+2023/10/19 11:05:49 stdout MOUNT SWARM DESKTOP.DMG: Checksumming Protective Master Boot Record (MBR : 0)…
+Protective Master Boot Record (MBR :: verified CRC32 $F5E8FC93
+Checksumming GPT Header (Primary GPT Header : 1)…
+ GPT Header (Primary GPT Header : 1): verified CRC32 $8B031ED6
+Checksumming GPT Partition Data (Primary GPT Table : 2)…
+GPT Partition Data (Primary GPT Tabl: verified CRC32 $9228D4C7
+Checksumming  (Apple_Free : 3)…
+                    (Apple_Free : 3): verified CRC32 $00000000
+Checksumming disk image (Apple_HFS : 4)…
+          disk image (Apple_HFS : 4): verified CRC32 $9637F3A7
+Checksumming  (Apple_Free : 5)…
+                    (Apple_Free : 5): verified CRC32 $00000000
+Checksumming GPT Partition Data (Backup GPT Table : 6)…
+GPT Partition Data (Backup GPT Table: verified CRC32 $9228D4C7
+Checksumming GPT Header (Backup GPT Header : 7)…
+  GPT Header (Backup GPT Header : 7): verified CRC32 $53B79C5A
+verified CRC32 $835C0D93
+/dev/disk4          	GUID_partition_scheme          	
+/dev/disk4s1        	Apple_HFS                      	/Volumes/Swarm Desktop
+
+2023/10/19 11:05:49 stderr MOUNT SWARM DESKTOP.DMG: 
+2023/10/19 11:05:52 stdout INSTALL SWARM DESKTOP.APP: 
+2023/10/19 11:05:52 stderr INSTALL SWARM DESKTOP.APP: 
+2023/10/19 11:05:52 Installation success 
+2023/10/19 11:05:55 stdout OPEN SWARM DESKTOP.APP: 
+2023/10/19 11:05:55 stderr OPEN SWARM DESKTOP.APP: 
+2023/10/19 11:06:25 stdout CHECK DATA-DIR EXISTENCE: 
+2023/10/19 11:06:25 stderr CHECK DATA-DIR EXISTENCE: 
+2023/10/19 11:06:28 Found bee.log: "msg"="using chain with network network" "chain_id"=100 "network_id"=1
+2023/10/19 11:06:28 Found bee.log: "msg"="starting debug server" "address"="127.0.0.1:1635"
+2023/10/19 11:06:28 Found bee.log: "msg"="using datadir" "path"="/Users/zolmac/Library/Application Support/Swarm Desktop/data-dir"
+2023/10/19 11:06:28 Found bee.log: "msg"="starting in ultra-light mode"
+2023/10/19 11:06:28 Found bee.log: "msg"="connected" "tld"="" "endpoint"="https://cloudflare-eth.com"
+2023/10/19 11:06:28 Found bee.log: "msg"="starting api server" "address"="127.0.0.1:1633"
+2023/10/19 11:06:31 stdout EXIT SWARM DESKTOP.APP: 
+2023/10/19 11:06:31 stderr EXIT SWARM DESKTOP.APP: 
+2023/10/19 11:06:31 stdout EXIT SAFARI: 
+2023/10/19 11:06:31 stderr EXIT SAFARI: 
+2023/10/19 11:06:34 stdout Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 11:06:34 stderr Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 11:06:34 stdout Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 11:06:34 stderr Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 11:06:34 stdout Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: 
+2023/10/19 11:06:34 stderr Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: 
+2023/10/19 11:06:34 stdout UNMOUNT SWARM DESKTOP.DMG: "disk4" ejected.
+
+2023/10/19 11:06:34 stderr UNMOUNT SWARM DESKTOP.DMG: 
+2023/10/19 11:06:34 Detach success: "disk4" ejected.
+
+2023/10/19 11:06:36 stdout DELETE SWARM DESKTOP DMG: 
+2023/10/19 11:06:36 stderr DELETE SWARM DESKTOP DMG: 
+2023/10/19 11:06:40 
+
+
+
+
+TEST ROUND No.3 at 2023-10-19 11:06:40.857848 +0200 CEST m=+143.492518710
+
+2023/10/19 11:06:55 stderr DOWNLOAD SWARM DESKTOP: --2023-10-19 11:06:40--  https://github.com/ethersphere/swarm-desktop/releases/download/v0.30.0/Swarm.Desktop-0.30.0-arm64.dmg
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T090529Z&X-Amz-Expires=300&X-Amz-Signature=ab40e63aa215ef93dca29caf29daff8918dad91300170d15c10ca01d64c6dfe0&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream [following]
+--2023-10-19 11:06:41--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T090529Z&X-Amz-Expires=300&X-Amz-Signature=ab40e63aa215ef93dca29caf29daff8918dad91300170d15c10ca01d64c6dfe0&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 99521748 (95M) [application/octet-stream]
+Saving to: âSwarm.Desktop-0.30.0-arm64.dmgâ
+
+     0K .......... .......... .......... .......... ..........  0% 4.04M 23s
+    50K .......... .......... .......... .......... ..........  ...... 99% 6.70M 0s
+ 96950K .......... .......... .......... .......... .......... 99% 4.30M 0s
+ 97000K .......... .......... .......... .......... .......... 99% 14.6M 0s
+ 97050K .......... .......... .......... .......... .......... 99% 13.2M 0s
+ 97100K .......... .......... .......... .......... .......... 99% 7.21M 0s
+ 97150K .......... .......... .......... .........            100% 6.66M=14s
+
+2023-10-19 11:06:55 (7.01 MB/s) - âSwarm.Desktop-0.30.0-arm64.dmgâ saved [99521748/99521748]
+
+
+2023/10/19 11:06:59 stdout MOUNT SWARM DESKTOP.DMG: Checksumming Protective Master Boot Record (MBR : 0)…
+Protective Master Boot Record (MBR :: verified CRC32 $F5E8FC93
+Checksumming GPT Header (Primary GPT Header : 1)…
+ GPT Header (Primary GPT Header : 1): verified CRC32 $8B031ED6
+Checksumming GPT Partition Data (Primary GPT Table : 2)…
+GPT Partition Data (Primary GPT Tabl: verified CRC32 $9228D4C7
+Checksumming  (Apple_Free : 3)…
+                    (Apple_Free : 3): verified CRC32 $00000000
+Checksumming disk image (Apple_HFS : 4)…
+          disk image (Apple_HFS : 4): verified CRC32 $9637F3A7
+Checksumming  (Apple_Free : 5)…
+                    (Apple_Free : 5): verified CRC32 $00000000
+Checksumming GPT Partition Data (Backup GPT Table : 6)…
+GPT Partition Data (Backup GPT Table: verified CRC32 $9228D4C7
+Checksumming GPT Header (Backup GPT Header : 7)…
+  GPT Header (Backup GPT Header : 7): verified CRC32 $53B79C5A
+verified CRC32 $835C0D93
+/dev/disk4          	GUID_partition_scheme          	
+/dev/disk4s1        	Apple_HFS                      	/Volumes/Swarm Desktop
+
+2023/10/19 11:06:59 stderr MOUNT SWARM DESKTOP.DMG: 
+2023/10/19 11:07:02 stdout INSTALL SWARM DESKTOP.APP: 
+2023/10/19 11:07:02 stderr INSTALL SWARM DESKTOP.APP: 
+2023/10/19 11:07:02 Installation success 
+2023/10/19 11:07:05 stdout OPEN SWARM DESKTOP.APP: 
+2023/10/19 11:07:05 stderr OPEN SWARM DESKTOP.APP: 
+2023/10/19 11:07:35 stdout CHECK DATA-DIR EXISTENCE: 
+2023/10/19 11:07:35 stderr CHECK DATA-DIR EXISTENCE: 
+2023/10/19 11:07:38 Found bee.log: "msg"="using chain with network network" "chain_id"=100 "network_id"=1
+2023/10/19 11:07:38 Found bee.log: "msg"="starting debug server" "address"="127.0.0.1:1635"
+2023/10/19 11:07:38 Found bee.log: "msg"="using datadir" "path"="/Users/zolmac/Library/Application Support/Swarm Desktop/data-dir"
+2023/10/19 11:07:38 Found bee.log: "msg"="starting in ultra-light mode"
+2023/10/19 11:07:38 Found bee.log: "msg"="connected" "tld"="" "endpoint"="https://cloudflare-eth.com"
+2023/10/19 11:07:38 Found bee.log: "msg"="starting api server" "address"="127.0.0.1:1633"
+2023/10/19 11:07:41 stdout EXIT SWARM DESKTOP.APP: 
+2023/10/19 11:07:41 stderr EXIT SWARM DESKTOP.APP: 
+2023/10/19 11:07:41 stdout EXIT SAFARI: 
+2023/10/19 11:07:41 stderr EXIT SAFARI: 
+2023/10/19 11:07:44 stdout Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 11:07:44 stderr Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 11:07:44 stdout Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 11:07:44 stderr Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 11:07:44 stdout Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: 
+2023/10/19 11:07:44 stderr Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: 
+2023/10/19 11:07:44 stdout UNMOUNT SWARM DESKTOP.DMG: "disk4" ejected.
+
+2023/10/19 11:07:44 stderr UNMOUNT SWARM DESKTOP.DMG: 
+2023/10/19 11:07:44 Detach success: "disk4" ejected.
+
+2023/10/19 11:07:46 stdout DELETE SWARM DESKTOP DMG: 
+2023/10/19 11:07:46 stderr DELETE SWARM DESKTOP DMG: 
+2023/10/19 11:08:28 
+
+
+
+
+TEST ROUND No.1 at 2023-10-19 11:08:28.657652 +0200 CEST m=+3.230701501
+
+2023/10/19 11:08:44 stderr DOWNLOAD SWARM DESKTOP: --2023-10-19 11:08:28--  https://github.com/ethersphere/swarm-desktop/releases/download/v0.30.0/Swarm.Desktop-0.30.0-arm64.dmg
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T090829Z&X-Amz-Expires=300&X-Amz-Signature=6d218f5862ac28522c7e8e8bacde04a729cb255604f09cc4504e90a3cb42bb92&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream [following]
+--2023-10-19 11:08:28--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T090829Z&X-Amz-Expires=300&X-Amz-Signature=6d218f5862ac28522c7e8e8bacde04a729cb255604f09cc4504e90a3cb42bb92&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 99521748 (95M) [application/octet-stream]
+Saving to: âSwarm.Desktop-0.30.0-arm64.dmgâ
+
+     0K .......... .......... .......... .......... ..........  0% 3.36M 28s
+    50K .......... .......... .......... .......... ..........  ...... 99% 6.97M 0s
+ 96950K .......... .......... .......... .......... .......... 99% 10.8M 0s
+ 97000K .......... .......... .......... .......... .......... 99% 5.19M 0s
+ 97050K .......... .......... .......... .......... .......... 99% 6.24M 0s
+ 97100K .......... .......... .......... .......... .......... 99% 10.6M 0s
+ 97150K .......... .......... .......... .........            100% 11.5M=16s
+
+2023-10-19 11:08:44 (6.05 MB/s) - âSwarm.Desktop-0.30.0-arm64.dmgâ saved [99521748/99521748]
+
+
+2023/10/19 11:08:50 stdout MOUNT SWARM DESKTOP.DMG: Checksumming Protective Master Boot Record (MBR : 0)…
+Protective Master Boot Record (MBR :: verified CRC32 $F5E8FC93
+Checksumming GPT Header (Primary GPT Header : 1)…
+ GPT Header (Primary GPT Header : 1): verified CRC32 $8B031ED6
+Checksumming GPT Partition Data (Primary GPT Table : 2)…
+GPT Partition Data (Primary GPT Tabl: verified CRC32 $9228D4C7
+Checksumming  (Apple_Free : 3)…
+                    (Apple_Free : 3): verified CRC32 $00000000
+Checksumming disk image (Apple_HFS : 4)…
+          disk image (Apple_HFS : 4): verified CRC32 $9637F3A7
+Checksumming  (Apple_Free : 5)…
+                    (Apple_Free : 5): verified CRC32 $00000000
+Checksumming GPT Partition Data (Backup GPT Table : 6)…
+GPT Partition Data (Backup GPT Table: verified CRC32 $9228D4C7
+Checksumming GPT Header (Backup GPT Header : 7)…
+  GPT Header (Backup GPT Header : 7): verified CRC32 $53B79C5A
+verified CRC32 $835C0D93
+/dev/disk4          	GUID_partition_scheme          	
+/dev/disk4s1        	Apple_HFS                      	/Volumes/Swarm Desktop
+
+2023/10/19 11:08:50 stderr MOUNT SWARM DESKTOP.DMG: 
+2023/10/19 11:08:53 stdout INSTALL SWARM DESKTOP.APP: 
+2023/10/19 11:08:53 stderr INSTALL SWARM DESKTOP.APP: 
+2023/10/19 11:08:53 Installation success 
+2023/10/19 11:08:56 stdout OPEN SWARM DESKTOP.APP: 
+2023/10/19 11:08:56 stderr OPEN SWARM DESKTOP.APP: 
+2023/10/19 11:09:26 stdout CHECK DATA-DIR EXISTENCE: 
+2023/10/19 11:09:26 stderr CHECK DATA-DIR EXISTENCE: 
+2023/10/19 11:09:29 Found bee.log: "msg"="using chain with network network" "chain_id"=100 "network_id"=1
+2023/10/19 11:09:29 Found bee.log: "msg"="starting debug server" "address"="127.0.0.1:1635"
+2023/10/19 11:09:29 Found bee.log: "msg"="using datadir" "path"="/Users/zolmac/Library/Application Support/Swarm Desktop/data-dir"
+2023/10/19 11:09:29 Found bee.log: "msg"="starting in ultra-light mode"
+2023/10/19 11:09:29 Found bee.log: "msg"="connected" "tld"="" "endpoint"="https://cloudflare-eth.com"
+2023/10/19 11:09:29 Found bee.log: "msg"="starting api server" "address"="127.0.0.1:1633"
+2023/10/19 11:09:32 stdout EXIT SWARM DESKTOP.APP: 
+2023/10/19 11:09:32 stderr EXIT SWARM DESKTOP.APP: 
+2023/10/19 11:09:32 stdout EXIT SAFARI: 
+2023/10/19 11:09:32 stderr EXIT SAFARI: 
+2023/10/19 11:09:35 stdout Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 11:09:35 stderr Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 11:09:35 stdout Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 11:09:35 stderr Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 11:09:35 stdout Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: 
+2023/10/19 11:09:35 stderr Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: 
+2023/10/19 11:09:35 stdout UNMOUNT SWARM DESKTOP.DMG: "disk4" ejected.
+
+2023/10/19 11:09:35 stderr UNMOUNT SWARM DESKTOP.DMG: 
+2023/10/19 11:09:35 Detach success: "disk4" ejected.
+
+2023/10/19 11:09:37 stdout DELETE SWARM DESKTOP DMG: 
+2023/10/19 11:09:37 stderr DELETE SWARM DESKTOP DMG: 
+2023/10/19 11:11:45 
+
+
+
+
+TEST ROUND No.1 at 2023-10-19 11:11:45.427982 +0200 CEST m=+2.653263751
+
+2023/10/19 11:12:01 stderr DOWNLOAD SWARM DESKTOP: --2023-10-19 11:11:45--  https://github.com/ethersphere/swarm-desktop/releases/download/v0.30.0/Swarm.Desktop-0.30.0-arm64.dmg
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T091145Z&X-Amz-Expires=300&X-Amz-Signature=bdf6d64c2e5bc2cf2801b1e345d56e26d28f2960886c3a1cf22e6df06d87033c&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream [following]
+--2023-10-19 11:11:45--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/465521639/e4302e6c-bab1-4b37-92c4-71ac8c683897?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T091145Z&X-Amz-Expires=300&X-Amz-Signature=bdf6d64c2e5bc2cf2801b1e345d56e26d28f2960886c3a1cf22e6df06d87033c&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=465521639&response-content-disposition=attachment%3B%20filename%3DSwarm.Desktop-0.30.0-arm64.dmg&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 99521748 (95M) [application/octet-stream]
+Saving to: âSwarm.Desktop-0.30.0-arm64.dmgâ
+
+     0K .......... .......... .......... .......... ..........  0% 3.64M 26s
+    50K .......... .......... .......... .......... ..........  ...... 99% 11.3M 0s
+ 96950K .......... .......... .......... .......... .......... 99% 7.24M 0s
+ 97000K .......... .......... .......... .......... .......... 99% 8.09M 0s
+ 97050K .......... .......... .......... .......... .......... 99% 2.76M 0s
+ 97100K .......... .......... .......... .......... .......... 99% 12.7M 0s
+ 97150K .......... .......... .......... .........            100% 18.1M=15s
+
+2023-10-19 11:12:01 (6.23 MB/s) - âSwarm.Desktop-0.30.0-arm64.dmgâ saved [99521748/99521748]
+
+
+2023/10/19 11:12:05 stdout MOUNT SWARM DESKTOP.DMG: Checksumming Protective Master Boot Record (MBR : 0)…
+Protective Master Boot Record (MBR :: verified CRC32 $F5E8FC93
+Checksumming GPT Header (Primary GPT Header : 1)…
+ GPT Header (Primary GPT Header : 1): verified CRC32 $8B031ED6
+Checksumming GPT Partition Data (Primary GPT Table : 2)…
+GPT Partition Data (Primary GPT Tabl: verified CRC32 $9228D4C7
+Checksumming  (Apple_Free : 3)…
+                    (Apple_Free : 3): verified CRC32 $00000000
+Checksumming disk image (Apple_HFS : 4)…
+          disk image (Apple_HFS : 4): verified CRC32 $9637F3A7
+Checksumming  (Apple_Free : 5)…
+                    (Apple_Free : 5): verified CRC32 $00000000
+Checksumming GPT Partition Data (Backup GPT Table : 6)…
+GPT Partition Data (Backup GPT Table: verified CRC32 $9228D4C7
+Checksumming GPT Header (Backup GPT Header : 7)…
+  GPT Header (Backup GPT Header : 7): verified CRC32 $53B79C5A
+verified CRC32 $835C0D93
+/dev/disk4          	GUID_partition_scheme          	
+/dev/disk4s1        	Apple_HFS                      	/Volumes/Swarm Desktop
+
+2023/10/19 11:12:05 stderr MOUNT SWARM DESKTOP.DMG: 
+2023/10/19 11:12:08 stdout INSTALL SWARM DESKTOP.APP: 
+2023/10/19 11:12:08 stderr INSTALL SWARM DESKTOP.APP: 
+2023/10/19 11:12:08 Installation success 
+2023/10/19 11:12:11 stdout OPEN SWARM DESKTOP.APP: 
+2023/10/19 11:12:11 stderr OPEN SWARM DESKTOP.APP: 
+2023/10/19 11:12:41 stdout CHECK DATA-DIR EXISTENCE: 
+2023/10/19 11:12:41 stderr CHECK DATA-DIR EXISTENCE: 
+2023/10/19 11:12:44 Found bee.log: "msg"="using chain with network network" "chain_id"=100 "network_id"=1
+2023/10/19 11:12:44 Found bee.log: "msg"="starting debug server" "address"="127.0.0.1:1635"
+2023/10/19 11:12:44 Found bee.log: "msg"="using datadir" "path"="/Users/zolmac/Library/Application Support/Swarm Desktop/data-dir"
+2023/10/19 11:12:44 Found bee.log: "msg"="starting in ultra-light mode"
+2023/10/19 11:12:44 Found bee.log: "msg"="connected" "tld"="" "endpoint"="https://cloudflare-eth.com"
+2023/10/19 11:12:44 Found bee.log: "msg"="starting api server" "address"="127.0.0.1:1633"
+2023/10/19 11:12:47 stdout EXIT SWARM DESKTOP.APP: 
+2023/10/19 11:12:47 stderr EXIT SWARM DESKTOP.APP: 
+2023/10/19 11:12:47 stdout EXIT SAFARI: 
+2023/10/19 11:12:47 stderr EXIT SAFARI: 
+2023/10/19 11:12:50 stdout Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 11:12:50 stderr Delete: /Applications/Swarm Desktop.app: 
+2023/10/19 11:12:50 stdout Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 11:12:50 stderr Delete: /Users/zolmac/Library/Application Support/Swarm Desktop: 
+2023/10/19 11:12:50 stdout Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: 
+2023/10/19 11:12:50 stderr Delete: /Users/zolmac/Library/Logs/Swarm Desktop/: 
+2023/10/19 11:12:50 stdout UNMOUNT SWARM DESKTOP.DMG: "disk4" ejected.
+
+2023/10/19 11:12:50 stderr UNMOUNT SWARM DESKTOP.DMG: 
+2023/10/19 11:12:50 Detach success: "disk4" ejected.
+
+2023/10/19 11:12:52 stdout DELETE SWARM DESKTOP DMG: 
+2023/10/19 11:12:52 stderr DELETE SWARM DESKTOP DMG: 
