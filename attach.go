@@ -75,7 +75,7 @@ func mount_and_install(resultMap *map[string]bool) {
 				exitSwarm := exec.Command("pkill", "swarm-desktop")
 				shellCommandHandler(exitSwarm, "EXIT SWARM DESKTOP.APP")
 				fmt.Println("--------------------------")
-				exitSafari := exec.Command("pkill", "Safari")
+				exitSafari := exec.Command("osascript", "-e", "tell application \"Safari\" to quit")
 				shellCommandHandler(exitSafari, "EXIT SAFARI")
 				fmt.Println("--------------------------")
 			}

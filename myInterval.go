@@ -58,8 +58,18 @@ func myInterval(steps int, interval int) {
 		//fmt.Println("result map length:", len(result_map))
 		iteration := 0
 		successCount := 0
+
+		fmt.Print(
+			"Test result at log-file      :", result_map["log_file"], "\n",
+			"Test result at download      :", result_map["download"], "\n",
+			"Test result at attach        :", result_map["attach"], "\n",
+			"Test result at install       :", result_map["install"], "\n",
+			"Test result at run           :", result_map["run"], "\n",
+			"Test result at check-data-dir:", result_map["check_data_dir"], "\n",
+			"Test result at check-bee-log :", result_map["check_bee_log"], "\n",
+		)
 		for item := range result_map {
-			fmt.Println("Test result at:", item, ":", result_map[item])
+			//fmt.Println("Test result at:", item, ":", result_map[item])
 			iteration++
 
 			if result_map[item] {

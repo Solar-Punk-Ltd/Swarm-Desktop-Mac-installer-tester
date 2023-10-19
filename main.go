@@ -23,7 +23,6 @@ func main() {
 		}
 
 		input, werr := warning()
-
 		if werr != nil {
 			fmt.Println("ERROR:", werr.Error())
 		} else {
@@ -36,14 +35,16 @@ func main() {
 		}
 
 	} else {
-		input, werr := warning()
+		fmt.Println("Missing iteration and/or interval argument")
+		fmt.Println("Running test only once")
+		fmt.Println("--------------------------")
 
+		input, werr := warning()
 		if werr != nil {
 			fmt.Println("ERROR:", werr.Error())
 		} else {
 			if input == "OK" {
-				fmt.Println("Missing iteration and/or interval argument")
-				fmt.Println("Running test only once")
+
 				myInterval(steps, interval)
 			} else {
 				fmt.Println("Try again")
