@@ -24,7 +24,14 @@ func myInterval(steps int, interval int) {
 		fmt.Println("TEST ROUND:", i+1)
 		fmt.Println("--------------------------")
 
-		var result_map map[string]bool = make(map[string]bool)
+		var resultMap map[string]bool = make(map[string]bool)
+		resultMap["log_file"] = false
+		resultMap["download"] = false
+		resultMap["attach"] = false
+		resultMap["install"] = false
+		resultMap["run"] = false
+		resultMap["check_data_dir"] = false
+		resultMap["check_bee_log"] = false
 
 		file, file_err := os.OpenFile("installer_log.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 		if file_err != nil {
@@ -32,20 +39,20 @@ func myInterval(steps int, interval int) {
 		} else {
 			log.SetOutput(file)
 			fmt.Println("log file opened")
-			result_map["log_file"] = true
+			resultMap["log_file"] = true
 			fmt.Println("--------------------------")
 			log.Printf("\n\n\n\n\nTEST ROUND No.%d at %s\n\n", i+1, time.Now())
 
 			downloadDmg := exec.Command("wget", "https://github.com/ethersphere/swarm-desktop/releases/download/v0.30.0/Swarm.Desktop-0.30.0-arm64.dmg")
 			_, downloadErr := shellCommandHandler(downloadDmg, "DOWNLOAD SWARM DESKTOP")
 			if downloadErr != nil {
-				result_map["download"] = false
+				resultMap["download"] = false
 			} else {
-				result_map["download"] = true
+				resultMap["download"] = true
 				fmt.Println("--------------------------")
 				time.Sleep(2 * time.Second)
 
-				mount_and_install(&result_map)
+				mount_and_install(&resultMap)
 				fmt.Println("--------------------------")
 				time.Sleep(2 * time.Second)
 
@@ -55,28 +62,28 @@ func myInterval(steps int, interval int) {
 			}
 		}
 
-		//fmt.Println("result map length:", len(result_map))
+		//fmt.Println("result map length:", len(resultMap))
 		iteration := 0
 		successCount := 0
 
 		fmt.Print(
-			"Test result at log-file      :", result_map["log_file"], "\n",
-			"Test result at download      :", result_map["download"], "\n",
-			"Test result at attach        :", result_map["attach"], "\n",
-			"Test result at install       :", result_map["install"], "\n",
-			"Test result at run           :", result_map["run"], "\n",
-			"Test result at check-data-dir:", result_map["check_data_dir"], "\n",
-			"Test result at check-bee-log :", result_map["check_bee_log"], "\n",
+			"Test result at log-file      :", resultMap["log_file"], "\n",
+			"Test result at download      :", resultMap["download"], "\n",
+			"Test result at attach        :", resultMap["attach"], "\n",
+			"Test result at install       :", resultMap["install"], "\n",
+			"Test result at run           :", resultMap["run"], "\n",
+			"Test result at check-data-dir:", resultMap["check_data_dir"], "\n",
+			"Test result at check-bee-log :", resultMap["check_bee_log"], "\n",
 		)
-		for item := range result_map {
-			//fmt.Println("Test result at:", item, ":", result_map[item])
+		for item := range resultMap {
+			//fmt.Println("Test result at:", item, ":", resultMap[item])
 			iteration++
 
-			if result_map[item] {
+			if resultMap[item] {
 				successCount++
 			}
 
-			if iteration == len(result_map) {
+			if iteration == len(resultMap) {
 				switch successCount {
 				case 7:
 					resultCounter.success++
