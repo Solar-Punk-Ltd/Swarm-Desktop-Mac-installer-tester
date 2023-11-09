@@ -3,12 +3,19 @@ package main
 import (
 	"fmt"
 	"sync"
+	"time"
 )
 
 var steps, interval int = 1, 10
 
+type result struct {
+	success int
+	failure int
+}
+
 func main() {
 	var currentTask string //add to myInterval as arg
+	resultCounter := result{0, 0}
 	var wg sync.WaitGroup
 	round := 0
 
@@ -26,11 +33,15 @@ func main() {
 			fmt.Println("Let's run")
 			wg.Add(1)
 			go quit(&round, steps, &wg, &currentTask)
-			for i := 0; i < steps; i++ {
-				testRound(steps, interval, &currentTask, i)
-				if i == steps-1 {
+			for round < steps {
+				if round > 0 {
+					time.Sleep(time.Duration(interval) * time.Second)
+				}
+				testRound(steps, interval, &currentTask, round, &resultCounter)
+				if round == steps-1 {
 					return
 				}
+				round++
 			}
 		} else if input == "q" {
 			fmt.Println("Quit main")

@@ -31,20 +31,28 @@ func initTester(steps *int, interval *int, LIB *string, APPNAME *string, HOMEDIR
 			fmt.Println("ERROR time interval:", intervalErr.Error())
 		}
 
-		var version string
-		_, versionErr := fmt.Sscan(os.Args[3], version)
-		if versionErr != nil {
-			fmt.Println("ERROR version name:", versionErr.Error())
-		} else {
-			*LIB = "v" + version
-			*APPNAME = "Swarm.Desktop-" + version + "-arm64.dmg"
+		if len(os.Args) == 4 {
+			var version string
+			_, versionErr := fmt.Sscan(os.Args[3], version)
+			if versionErr != nil {
+				fmt.Println("ERROR version name:", versionErr.Error())
+			} else {
+				*LIB = "v" + version
+				*APPNAME = "Swarm.Desktop-" + version + "-arm64.dmg"
+			}
 		}
+		/*
+			if len(os.Args) == 5 {
+				browser, browserErr := fmt.Sscan(os.Args[4], *BROWSER)
+				if browserErr != nil {
+					fmt.Println("ERROR browser name", browserErr.Error())
+				} else {
+					if browser == "Safari" || browser == "Firefox" {
 
-		_, browserErr := fmt.Sscan(os.Args[4], *BROWSER)
-		if browserErr != nil {
-			fmt.Println("ERROR browser name", browserErr.Error())
-		}
-
+					}
+				}
+			}
+		*/
 	} else {
 		fmt.Println("Missing iteration and/or interval argument")
 		fmt.Println("Running test only once")

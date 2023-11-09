@@ -7,13 +7,7 @@ import (
 	"time"
 )
 
-func testRound(steps int, interval int, currentTask *string, round int) {
-	type result struct {
-		success int
-		failure int
-	}
-
-	resultCounter := result{0, 0}
+func testRound(steps int, interval int, currentTask *string, round int, resultCounter *result) {
 
 	fmt.Printf("\n\n\n")
 	fmt.Println("--------------------------")
@@ -67,20 +61,18 @@ func testRound(steps int, interval int, currentTask *string, round int) {
 		if iteration == len(resultMap) {
 			switch successCount {
 			case 8:
-				resultCounter.success++
+				(*resultCounter).success++
 				fmt.Println("TEST ROUND SUCCEED")
 			default:
-				resultCounter.failure++
+				(*resultCounter).failure++
 				fmt.Println("TEST ROUND FAILED")
 			}
 		}
 	}
 
-	fmt.Println("\nTest round count: ", resultCounter.success+resultCounter.failure)
-	fmt.Println("SUCCESS:", resultCounter.success)
-	fmt.Println("FAILED:", resultCounter.failure)
-
-	time.Sleep(time.Duration(interval) * time.Second)
+	fmt.Println("\nTest round count: ", (*resultCounter).success+(*resultCounter).failure, "/", steps)
+	fmt.Println("SUCCESS:", (*resultCounter).success)
+	fmt.Println("FAILED:", (*resultCounter).failure)
 
 	*currentTask = "finish"
 }
