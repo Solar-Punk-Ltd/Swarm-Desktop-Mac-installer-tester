@@ -2,54 +2,42 @@ package main
 
 import (
 	"fmt"
-	"os"
+	"sync"
 )
 
 var steps, interval int = 1, 10
 
 func main() {
+	var currentTask string //add to myInterval as arg
+	var wg sync.WaitGroup
+	round := 0
 
-	if len(os.Args) >= 3 {
-		_, steps_err := fmt.Sscan(os.Args[1], &steps)
+	initTester(&steps, &interval, &LIB, &APPNAME, &HOMEDIR, &BROWSER)
 
-		if steps_err != nil {
-			fmt.Println("ERROR iteration number:", steps_err.Error())
-		}
+	fmt.Println("THIS IS SWARM INSTALLER TESTER")
+	fmt.Println("Before run this app, DELETE SWARM DESKTOP app from /Applications, and IF YOU HAVE ANY FUNDS in your wallet backup them - https://docs.ethswarm.org/docs/desktop/backup-restore")
+	fmt.Println("Type OK, if you are ready! - Type q to quit, qi to quit immediate!")
 
-		_, interval_err := fmt.Sscan(os.Args[2], &interval)
-
-		if interval_err != nil {
-			fmt.Println("ERROR time interval:", interval_err.Error())
-		}
-
-		input, werr := warning()
-		if werr != nil {
-			fmt.Println("ERROR:", werr.Error())
-		} else {
-			if input == "OK" {
-				fmt.Println("Let's run")
-				myInterval(steps, interval)
-			} else {
-				fmt.Println("Try again")
-			}
-		}
-
+	input, err := myReader()
+	if err != nil {
+		fmt.Println("ERROR:", err.Error())
 	} else {
-		fmt.Println("Missing iteration and/or interval argument")
-		fmt.Println("Running test only once")
-		fmt.Println("--------------------------")
-
-		input, werr := warning()
-		if werr != nil {
-			fmt.Println("ERROR:", werr.Error())
-		} else {
-			if input == "OK" {
-
-				myInterval(steps, interval)
-			} else {
-				fmt.Println("Try again")
+		if input == "OK" {
+			fmt.Println("Let's run")
+			wg.Add(1)
+			go quit(&round, steps, &wg, &currentTask)
+			for i := 0; i < steps; i++ {
+				testRound(steps, interval, &currentTask, i)
+				if i == steps-1 {
+					return
+				}
 			}
+		} else if input == "q" {
+			fmt.Println("Quit main")
+		} else {
+			fmt.Println("Try again")
 		}
 	}
 
+	wg.Wait()
 }

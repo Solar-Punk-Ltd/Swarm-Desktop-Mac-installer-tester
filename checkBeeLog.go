@@ -8,16 +8,9 @@ import (
 	"golang.org/x/exp/slices"
 )
 
-func checkBeeLog(data string, resultMap *map[string]bool) {
-	fmt.Println("Start CHECK BEE.LOG")
-	keyFrases := []string{
-		"\"msg\"=\"using chain with network network\" \"chain_id\"=100 \"network_id\"=1",
-		"\"msg\"=\"starting debug server\" \"address\"=\"127.0.0.1:1635\"",
-		"\"msg\"=\"using datadir\" \"path\"=\"/Users/zolmac/Library/Application Support/Swarm Desktop/data-dir\"",
-		"\"msg\"=\"starting in ultra-light mode\"",
-		"\"msg\"=\"connected\" \"tld\"=\"\" \"endpoint\"=\"https://cloudflare-eth.com\"",
-		"\"msg\"=\"starting api server\" \"address\"=\"127.0.0.1:1633\"",
-	}
+func checkBeeLog(data string, resultMap *map[string]bool, logName string, keyFrases []string) {
+	fmt.Println("Start CHECK " + logName + ".log")
+	resultName := "check_" + logName + "_log"
 
 	for len(data) > 0 {
 		//fmt.Println(len(data))
@@ -25,8 +18,8 @@ func checkBeeLog(data string, resultMap *map[string]bool) {
 		for i := 0; i < len(keyFrases); i++ {
 			findFrase := strings.Index(before, keyFrases[i])
 			if findFrase > -1 {
-				fmt.Println("Found bee.log: " + keyFrases[i])
-				log.Println("Found bee.log: " + keyFrases[i])
+				fmt.Println("Found " + logName + ".log: " + keyFrases[i])
+				log.Println("Found " + logName + ".log: " + keyFrases[i])
 				//fmt.Println("i:", i)
 				keyFrases = slices.Delete(keyFrases, i, 1)
 				i = len(keyFrases)
@@ -36,18 +29,18 @@ func checkBeeLog(data string, resultMap *map[string]bool) {
 		if len(keyFrases) > 0 {
 			data = after
 		} else {
-			(*resultMap)["check_bee_log"] = true
-			fmt.Println("CHECK BEE.LOG finished with SUCCESS")
+			(*resultMap)[resultName] = true
+			fmt.Println("CHECK " + logName + ".log finished with SUCCESS")
 			data = ""
 		}
 
 	}
 
 	if len(keyFrases) > 0 {
-		(*resultMap)["check_bee_log"] = false
-		fmt.Println("Check bee.log not found:")
+		(*resultMap)[resultName] = false
+		fmt.Println("Check " + logName + ".log not found:")
 		fmt.Println(keyFrases)
-		log.Println("Check bee.log not found:")
+		log.Println("Check " + logName + ".log not found:")
 		log.Println(keyFrases)
 	}
 

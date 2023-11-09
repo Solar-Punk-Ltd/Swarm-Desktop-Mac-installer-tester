@@ -8,8 +8,9 @@ import (
 	"time"
 )
 
-func mount_and_install(resultMap *map[string]bool) {
-	attachDmg := exec.Command("hdiutil", "attach", "Swarm.Desktop-0.30.0-arm64.dmg")
+func mount_and_install(resultMap *map[string]bool, currentTask *string) {
+	*currentTask = "hdiutil"
+	attachDmg := exec.Command("hdiutil", "attach", APPNAME)
 	_, attachErr := shellCommandHandler(attachDmg, "MOUNT SWARM DESKTOP.DMG")
 
 	if attachErr != nil {
@@ -24,6 +25,8 @@ func mount_and_install(resultMap *map[string]bool) {
 		defer detach()
 		time.Sleep(3 * time.Second)
 
+		*currentTask = "cp"
+		defer delete("/Applications/Swarm Desktop.app")
 		install := exec.Command("cp", "-R", "/Volumes/Swarm Desktop/Swarm Desktop.app", "/Applications")
 		installOut, installErr := shellCommandHandler(install, "INSTALL SWARM DESKTOP.APP")
 
@@ -33,11 +36,13 @@ func mount_and_install(resultMap *map[string]bool) {
 			(*resultMap)["install"] = false
 		} else {
 			//fmt.Println("Installation success:", installOut)
+
 			log.Println("Installation success", installOut)
 			(*resultMap)["install"] = true
 			fmt.Println("--------------------------")
 			time.Sleep(3 * time.Second)
 			//RUN
+			*currentTask = "open"
 			runProg := exec.Command("open", "/Applications/Swarm Desktop.app")
 			_, runProgErr := shellCommandHandler(runProg, "OPEN SWARM DESKTOP.APP")
 
@@ -45,11 +50,16 @@ func mount_and_install(resultMap *map[string]bool) {
 				(*resultMap)["run"] = false
 			} else {
 				(*resultMap)["run"] = true
+				defer delete(HOMEDIR + "/Library/Application Support/Swarm Desktop")
+				defer delete(HOMEDIR + "/Library/Logs/Swarm Desktop/")
+				defer exitProg(BROWSER, "osascript", "-e", "tell application \""+BROWSER+"\" to quit")
+				defer exitProg("SWARM DESKTOP.APP", "pkill", "swarm-desktop")
 				fmt.Println("--------------------------")
 				time.Sleep(30 * time.Second)
 
 				//CD data-dir
-				checkDataDir := exec.Command("cd", "/Users/zolmac/Library/Application Support/Swarm Desktop")
+				*currentTask = "cd"
+				checkDataDir := exec.Command("cd", HOMEDIR+"/Library/Application Support/Swarm Desktop")
 				_, checkDataDirErr := shellCommandHandler(checkDataDir, "CHECK DATA-DIR EXISTENCE")
 				if checkDataDirErr != nil {
 					//log.Println("Data-dir check error:", string(checkDataDirErr.Error()))
@@ -62,30 +72,38 @@ func mount_and_install(resultMap *map[string]bool) {
 				time.Sleep(3 * time.Second)
 
 				//CHECK bee.log /Users/zolmac/Library/Logs/Swarm Desktop
-				beeLog, beeLogErr := os.ReadFile("/Users/zolmac/Library/Logs/Swarm Desktop/bee.current.log")
-				if beeLogErr != nil {
-					log.Println(beeLogErr)
-					(*resultMap)["check_data_dir"] = false
-				} else {
-					checkBeeLog(string(beeLog), resultMap)
+				beeLogKeyFrases := []string{
+					"\"msg\"=\"using chain with network network\" \"chain_id\"=100 \"network_id\"=1",
+					"\"msg\"=\"starting debug server\" \"address\"=\"127.0.0.1:1635\"",
+					"\"msg\"=\"using datadir\" \"path\"=\"" + HOMEDIR + "/Library/Application Support/Swarm Desktop/data-dir\"",
+					"\"msg\"=\"starting in ultra-light mode\"",
+					"\"msg\"=\"connected\" \"tld\"=\"\" \"endpoint\"=\"https://cloudflare-eth.com\"",
+					"\"msg\"=\"starting api server\" \"address\"=\"127.0.0.1:1633\"",
 				}
 
-				fmt.Println("--------------------------")
-				time.Sleep(3 * time.Second)
-				exitSwarm := exec.Command("pkill", "swarm-desktop")
-				shellCommandHandler(exitSwarm, "EXIT SWARM DESKTOP.APP")
-				fmt.Println("--------------------------")
-				exitSafari := exec.Command("osascript", "-e", "tell application \"Safari\" to quit")
-				shellCommandHandler(exitSafari, "EXIT SAFARI")
-				fmt.Println("--------------------------")
+				beeLog, beeLogErr := os.ReadFile(HOMEDIR + "/Library/Logs/Swarm Desktop/bee.current.log")
+				if beeLogErr != nil {
+					log.Println(beeLogErr)
+					(*resultMap)["check_bee_log"] = false
+				} else {
+					checkBeeLog(string(beeLog), resultMap, "bee", beeLogKeyFrases)
+				}
+
+				desktopLogKeyFrases := []string{
+					"msg=\"OK\"",
+					"msg=\"Serving UI from path: /Applications/Swarm Desktop.app/Contents/Resources/app.asar/dist/ui\"",
+					"msg=\"Creating new Bee config.yaml\"",
+				}
+
+				desktopLog, desktopLogErr := os.ReadFile(HOMEDIR + "/Library/Logs/Swarm Desktop/bee-desktop.log") //??
+				if desktopLogErr != nil {
+					log.Println(desktopLogErr)
+					(*resultMap)["check_desktop_log"] = false
+				} else {
+					checkBeeLog(string(desktopLog), resultMap, "desktop", desktopLogKeyFrases)
+				}
 			}
 
-			time.Sleep(3 * time.Second)
-			delete("/Applications/Swarm Desktop.app")
-			fmt.Println("--------------------------")
-			delete("/Users/zolmac/Library/Application Support/Swarm Desktop")
-			fmt.Println("--------------------------")
-			delete("/Users/zolmac/Library/Logs/Swarm Desktop/")
 		}
 		fmt.Println("--------------------------")
 	}
